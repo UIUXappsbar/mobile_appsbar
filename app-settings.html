@@ -1,0 +1,155 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">  
+  <link rel="stylesheet" href="stylesheets/base.css">
+  
+  <!--[if (lte IE 8)&(!IEMobile)]>
+  <link rel="stylesheet" href="stylesheets/ie.css">
+  <![endif]-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+  <script src="js/libs/util.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/script.js"></script>
+  <!-- This should be replaced with a minified production build of Modernizr -->
+  <script src="js/libs/modernizr-2.5.3.js"></script>
+</head>
+<body>
+ 
+  <header>
+    <button class="back" onClick="parent.location='index.html'">Back</button>
+    <!-- <div class="profilePic"></div> -->
+    <h1 class="title">App Settings</h1>
+    
+  </header>
+
+  <div class="row main">
+
+    <div class="list">              
+      <h1 class="title">App Commerce</h1>
+      <span class="ListText">Would you like to use this app to sell products & services?</span>
+      
+      <div class="iconCommerce"></div>
+      <div class="Edit">Edit</div>
+
+      <div class="clear"></div>
+      
+      <div class="pullDown">
+       <form>
+        <span class="ListText">Set up E-commerce shopping cart</span>
+        <div class="question"></div>
+        <input type="text" placeholder="Store Name"/>
+        <hr>
+        <span class="ListText">Disclaimer for checkout page</span>
+        <div class="question"></div>
+        <textarea placeholder="Disclaimer"></textarea>
+         <hr>
+        <span class="ListText">Select a payment gateway</span>
+         <div class="question"></div>
+         <div class="clear"></div>
+        <input type="radio" name="Paypal" id="PayPal" value="Paypal - Website Payments Standard" checked = "checked" /> <label>Paypal - Website Payments Standard</label>
+        <div class="clear"></div>
+        <input type="text" placeholder="Paypal Email Address:"/>
+        <div class="clear"></div>
+        <input type="radio" name="Paypal" id="PayPalExpress" value="Paypal - Express Checkout" /><label>Paypal - Express Checkout</label>
+        <div class="clear"></div>
+         <hr>
+
+         <span class="ListText">Select purchase currency</span>
+         <div class="question"></div>
+         <div class="clear"></div>
+        
+ 
+<select name="CurrencyCode" id="CurrencyCode">
+<option value="AUD">Australian Dollar (AUD)</option>
+<option value="BRL">Brazilian Real (BRL)</option>
+<option value="CAD">Canadian Dollar (CAD)</option>
+<option value="CZK">Czech Koruna (CZK)</option>
+<option value="DKK">Danish Krone (DKK)</option>
+<option value="EUR">Euro (EUR)</option>
+<option value="HKD">Hong Kong Dollar (HKD)</option>
+<option value="HUF">Hungarian Forint (HUF)</option>
+<option value="ILS">Israeli New Sheqel (ILS)</option>
+<option value="JPY">Japanese Yen (JPY)</option>
+<option value="MYR">Malaysian Ringgit (MYR)</option>
+<option value="MXN">Mexican Peso (MXN)</option>
+<option value="NOK">Norwegian Krone (NOK)</option>
+<option value="NZD">New Zealand Dollar (NZD)</option>
+<option value="PHP">Philippine Peso (PHP)</option>
+<option value="PLN">Polish Zloty (PLN)</option>
+<option value="GBP">Pound Sterling (GBP)</option>
+<option value="SGD">Singapore Dollar (SGD)</option>
+<option value="SEK">Swedish Krona (SEK)</option>
+<option value="CHF">Swiss Franc (CHF)</option>
+<option value="TWD">Taiwan New Dollar (TWD)</option>
+<option value="THB">Thai Baht (THB)</option>
+<option value="TRY">Turkish Lira (TRY)</option>
+<option value="USD" selected="">U.S. Dollar (USD)</option>
+</select>
+        <div class="clear"></div>
+        
+        <div class="clear"></div>
+         <hr>
+
+         <span class="ListText">Tax Rate (percentage):</span>
+         <div class="question"></div>
+         <div class="clear"></div>
+        <input type="text" placeholder="0"/>
+        <div class="clear"></div>
+        <span class="ListText">If you want to charge 6.5% tax put 6.5 in the text box not .065</span>
+        <div class="clear"></div>
+         <hr>
+
+           <span class="ListText">Shipping and Handling:</span>
+         <div class="question"></div>
+         <div class="clear"></div>
+        <input type="radio" name="Paypal" id="PayPal" value="Paypal - Website Payments Standard" checked = "checked" /> <label>No Shipping and Handling:</label>
+        <div class="clear"></div>
+        <input type="radio" name="Paypal" id="PayPal" value="Paypal - Website Payments Standard" checked = "checked" /> <label>Flat Rate (one price for entire order, ex: 19.99)</label>
+        <div class="clear"></div>
+        <input type="text" placeholder="0"/>
+        <div class="clear"></div>
+        <input type="radio" name="Paypal" id="PayPal" value="Paypal - Website Payments Standard" checked = "checked" /> <label>Per Item Shipping & Handling</label>
+        <div class="clear"></div>
+         <hr>
+
+        <button>Save</button>
+       </form>
+      </div> <!-- End of pullDown div -->
+
+    </div><!-- End of List Item -->
+    <div class="list">              
+      <h1 class="title">App Name</h1>
+      <span class="ListText">Change or Enter Name</span>
+      
+      <div class="iconCommerce"></div>
+      <div class="Edit">Edit</div>
+
+      <div class="clear"></div>
+      
+      <div class="pullDown">
+       <form>
+        <span class="ListText">Fill out the details below.</span>
+        <div class="question"></div>
+        <input type="text" placeholder="App Name"/>
+        <button>Save</button>
+       </form>
+      </div> <!-- End of pullDown div -->
+
+    </div><!-- End of List Item -->
+
+     
+
+     
+
+  </div> <!-- End of row -->
+
+</body>
+</html>
