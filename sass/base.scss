@@ -263,6 +263,32 @@ header {
 				 		font-size: .8em;
 				 	}
 				}
+				.library {
+				 	@include background-image-retina(library, 'png', 40px, 39px);
+				 	background-repeat: no-repeat;
+				 	width:50%;
+				 	height: 39px;
+				 	margin-top:10px;
+				 	float:left;
+				 	margin-left:0px;
+				 }
+				 .library:after {
+				 	content: 'Choose from our Library';
+				 	position: relative;
+				 	top:5px;
+				 	left:45px;
+				 	font-size: .6em;
+				 	@media (min-width: 340px) {
+				 		top:10px;
+				 		font-size: 1em;
+				 	}
+				 }
+
+				 .capture {
+				 	padding-top:20px;
+				 	padding-right:20px;
+				 	width:95%;
+				 }
 		}				 
 		}	
 		cursor: pointer;
@@ -284,5 +310,138 @@ header {
 	margin-bottom:10px;
 	background: url(../img/icon.png) no-repeat;
 }
+button {
+				color:#fff;
+				font-size: 1em;
+				font-weight: bold;
+				float: right;
+				position: relative;
+				top:8px;
+				right:10px;
+				padding:10px;
+				background-color: #063b84;
+				border:none;
+				@media (min-width: 340px) {
+					top:10px;
+				}
+			}
 
+			.continueButton {
+				width:92%;
+				padding:20px;
+				float:none;
+				margin: 10px auto;
+				margin-left:20px;
+				margin-bottom:20px;
+				@media (min-width: 340px) {
+				width:90%;
+				padding:20px;
+				float:none;
+				margin: 10px auto;
+				margin-left:30px;
+			}
+			}
+
+.inrow {
+	position: relative;
+	top:10px;
+	left:15px;
+	color:#063b84;
+	@media (min-width: 340px) {
+		top:10px;
+		left:20px;
+		font-weight: bold;
+		font-size: 1.1em;
+	}
+}	
+
+.threePanels {
+	max-width: 100%;
+	padding:10px;
+	margin: 0 auto;
+
+	.pagetype {
+		width:32%;
+		height: 78px;
+		float:left;
+	}
+	.pagetype:nth-child(even) {
+		
+		margin: 0 auto;
+		margin-left:6%;
+	}
+
+	.iconRight {
+		width:25%;
+		float:right;
+	}
+
+	.events {
+		background: url(../img/events.png) no-repeat;
+	}
+
+	.forms {
+		background: url(../img/forms.png) no-repeat;
+	}
+
+	.menuList {
+		background: url(../img/menuList.png) no-repeat;
+	}		
+
+	.Contact {
+		background: url(../img/Contact.png) no-repeat;
+	}
+
+	.Rss {
+		background: url(../img/Rss.png) no-repeat;
+	}
+
+	.SoundBoard {
+		background: url(../img/SoundBoard.png) no-repeat;
+	}		
+
+	.PhotoGallery {
+		background: url(../img/PhotoGallery.png) no-repeat;
+	}
+
+	.forms {
+		background: url(../img/forms.png) no-repeat;
+	}
+
+	.menuList {
+		background: url(../img/menuList.png) no-repeat;
+	}		
+
+	.VideoGallery {
+		background: url(../img/VideoGallery.png) no-repeat;
+	}
+
+	.Coupons {
+		background: url(../img/Coupons.png) no-repeat;
+	}
+
+	.SocialLinks {
+		background: url(../img/SocialLinks.png) no-repeat;
+	}
+
+	.Links {
+		background: url(../img/Links.png) no-repeat;
+	}
+
+	.Content {
+		background: url(../img/Content.png) no-repeat;
+	}
+
+	.Discography {
+		background: url(../img/Discography.png) no-repeat;
+	}
+
+	.Blogs {
+		background: url(../img/Blogs.png) no-repeat;
+	}
+
+	.Games {
+		background: url(../img/Games.png) no-repeat;
+	}
+}
 
